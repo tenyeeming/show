@@ -175,7 +175,7 @@ def index():
         limit_input = request.form.get('limit', '5')
 
         try:
-            limit = max(1, min(20, int(limit_input)))
+            limit = max(1, min(15, int(limit_input)))
         except ValueError:
             limit = 5
 
